@@ -1,0 +1,8 @@
+{
+  "name": "app13",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "app13/src",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}
