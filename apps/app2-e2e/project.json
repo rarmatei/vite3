@@ -1,0 +1,8 @@
+{
+  "name": "app2-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/app2-e2e/src",
+  "targets": {},
+  "implicitDependencies": ["app2"]
+}
