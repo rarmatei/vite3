@@ -5,15 +5,7 @@ launch-templates:
     init-steps:
       - name: Checkout
         uses: 'nrwl/nx-cloud-workflows/v3.1/workflow-steps/checkout/main.yaml'
-      - name: Restore Node Modules Cache
-        uses: 'nrwl/nx-cloud-workflows/v3.1/workflow-steps/cache/main.yaml'
-        env:
-          KEY: 'package-lock.json|yarn.lock|pnpm-lock.yaml'
-          PATHS: 'node_modules'
-          BASE_BRANCH: 'main'
-      - name: Install Node Modules
-        uses: 'nrwl/nx-cloud-workflows/v3.1/workflow-steps/install-node-modules/main.yaml'
-      - name: Install Browsers (if needed)
-        uses: 'nrwl/nx-cloud-workflows/v3.1/workflow-steps/install-browsers/main.yaml'
+      - name: install npm
+        script: yarn
 #      - name: sleep
 #        script: sleep 1200
