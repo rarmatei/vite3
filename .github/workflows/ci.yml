@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
+      - run: yarn
       - uses: nrwl/nx-set-shas@v4
 
       - run: npx nx lint app1
