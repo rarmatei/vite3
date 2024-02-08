@@ -1,8 +1,0 @@
-{
-  "name": "app12",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "app12/src",
-  "projectType": "application",
-  "targets": {},
-  "tags": []
-}
