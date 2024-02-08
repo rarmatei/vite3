@@ -7,5 +7,5 @@ launch-templates:
         uses: 'nrwl/nx-cloud-workflows/v3.1/workflow-steps/checkout/main.yaml'
       - name: install npm
         script: yarn
-#      - name: sleep
-#        script: sleep 1200
+      - name: sleep
+        script: sleep 1200
