@@ -1,5 +1,6 @@
 launch-templates:
   rares-linux-large-plus-js:
+    enable-dind-with-privileged-containers: true
     resource-class: "docker_linux_amd64/large+"
     image: 'ubuntu22.04-node20.9-v2'
     init-steps:
