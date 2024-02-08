@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 env:
-  NODE_OPTIONS: --max-old-space-size=2048
+  NODE_OPTIONS: --max-old-space-size=4096
 
 jobs:
   main:
@@ -23,7 +23,7 @@ jobs:
 
       # Connect your workspace on nx.app and uncomment this to enable task distribution.
       # The "--stop-agents-after" is optional, but allows idle agents to shut down once the "e2e-ci" targets have been requested
-      - run: npx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci" --withEnvVars="NODE_OPTIONS"
+      - run: npx nx-cloud start-ci-run --distribute-on="5 linux-large-plus-js" --stop-agents-after="e2e-ci" --withEnvVars="NODE_OPTIONS"
 
       # Cache node_modules
       - uses: actions/setup-node@v3
