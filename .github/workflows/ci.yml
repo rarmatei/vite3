@@ -1,5 +1,5 @@
-name: CI
 
+name: CI
 on:
   push:
     branches:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 env:
-  NODE_OPTIONS: --max-old-space-size=4096
+  NODE_OPTIONS: --max-old-space-size=2048
 
 jobs:
   main:
