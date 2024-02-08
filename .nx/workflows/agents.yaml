@@ -9,4 +9,4 @@ launch-templates:
       - name: install npm
         script: yarn
       - name: sleep
-        script: sleep 1200
+        script: sleep 3400
